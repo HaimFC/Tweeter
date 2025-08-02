@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweeter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" id="input" placeholder="What's on your mind?">
+    <button id="twit-button">Twit</button>
+
+    <div class="post template" style="display:none;">
+        <div class="post-text"></div>
+        <div class="delete">Delete Post</div>
+        <div class="comments"></div>
+        <input type="text" placeholder="Got something to say?" class="comment-input">
+        <button class="comment-button">Comment</button>
+    </div>
+
+    <div id="posts"></div>
+
+    <script src="model.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
